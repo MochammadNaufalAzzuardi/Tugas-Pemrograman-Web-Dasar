@@ -14,6 +14,9 @@
       <ul>
         <li><a href="#tentang-saya">Tentang Saya</a></li>
         <li><a href="#keahlian">Keahlian</a></li>
+        <li><a href="#pendidikan">Pendidikan</a></li>
+        <li><a href="#multimedia">Multimedia</a></li>
+        <li><a href="#pesan-form">Kirim Pesan</a></li>
         <li><a href="#kontak">Kontak</a></li>
       </ul>
     </nav>
@@ -21,7 +24,8 @@
     <main>
       <section id="tentang-saya">
         <h2>Tentang Saya</h2>
-        <img src="foto naufal.png" alt="Foto profil Mochammad Naufal Azzuardi tersenyum memakai kemeja rapi" />
+        <img src="foto naufal.png" alt="Foto profil Mochammad Naufal Azzuardi tersenyum memakai kemeja rapi" width="150" 
+          style="border-radius: 8px;"/>
         <p>
           Halo! Nama saya Mochammad Naufal Azzuardi. Saya adalah seorang pengembang web pemula yang berdomisili di Jombang. Saya memiliki ketertarikan yang besar dalam dunia teknologi, khususnya dalam membangun antarmuka web yang
           interaktif, ramah pengguna, dan dapat diakses oleh semua orang.
@@ -35,6 +39,86 @@
           <li>Dasar-dasar JavaScript</li>
           <li>Penggunaan Git & GitHub</li>
         </ul>
+      </section>
+
+      <section id="pendidikan">
+        <h2>Riwayat Pendidikan</h2>
+        <table border="1" cellpadding="8" cellspacing="0" style="width: 100%; border-collapse: collapse;">
+          <thead>
+            <tr>
+              <th>Tingkat</th>
+              <th>Nama Institusi</th>
+              <th>Tahun</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>SMA/Sederajat</td>
+              <td>SMK Telekomunikasi Darul Ulum Jombang</td>
+              <td>2022 - 2025</td>
+            </tr>
+            <tr>
+              <td>Perguruan Tinggi</td>
+              <td>Universitas Pesantren Tinggi Darul 'Ulum</td>
+              <td>2025 - Sekarang</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+
+      <section id="multimedia">
+        <h2>Multimedia</h2>
+        <p>Berikut adalah media pendukung profil saya:</p>
+        
+        <div>
+          <h3>Video Perkenalan Saya</h3>
+          <iframe 
+            width="315" 
+            height="560" 
+            src="https://www.youtube.com/embed/28BAScW-tzY" 
+            title="YouTube Shorts video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div style="margin-top: 15px;">
+          <h3>Audio Sambutan</h3>
+          <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+      </section>
+
+
+      <section id="pesan-form">
+        <h2>Buku Tamu / Kirim Pesan</h2>
+        <form action="#" method="POST">
+          <div style="margin-bottom: 10px;">
+            <label for="nama">Nama Lengkap:</label><br>
+            <input type="text" id="nama" name="nama" required placeholder="Masukkan nama Anda" style="width: 100%; max-width: 400px; padding: 6px;">
+          </div>
+          <div style="margin-bottom: 10px;">
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required placeholder="nama@email.com" style="width: 100%; max-width: 400px; padding: 6px;">
+          </div>
+          <div style="margin-bottom: 10px;">
+            <label for="kategori">Keperluan:</label><br>
+            <select id="kategori" name="kategori" style="width: 100%; max-width: 400px; padding: 6px;">
+              <option value="kolaborasi">Kolaborasi Proyek</option>
+              <option value="pertanyaan">Pertanyaan Umum</option>
+              <option value="lainnya">Lainnya</option>
+            </select>
+          </div>
+          <div style="margin-bottom: 10px;">
+            <label for="pesan">Pesan:</label><br>
+            <textarea id="pesan" name="pesan" rows="4" required placeholder="Tuliskan pesan..." style="width: 100%; max-width: 400px; padding: 6px;"></textarea>
+          </div>
+          <button type="submit" style="padding: 8px 16px; background-color: #2b6cb0; color: white; border: none; cursor: pointer;">Kirim</button>
+        </form>
       </section>
     </main>
 
