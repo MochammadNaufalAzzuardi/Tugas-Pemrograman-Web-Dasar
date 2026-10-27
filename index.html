@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 2_Naufal</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <nav class="nav">
+      <ul>
+        <li><a href="#tentang-saya">Tentang Saya</a></li>
+        <li><a href="#keahlian">Keahlian</a></li>
+        <li><a href="#pendidikan">Pendidikan</a></li>
+        <li><a href="#karyaku">Karyaku</a></li>
+        <li><a href="#pesan-form">Kirim Pesan</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="tentang-saya">
+        <div class="teks-perkenalan">
+        <h1>Mochammad Naufal Azzuardi</h1>
+        <p>
+          Halo! Nama saya Mochammad Naufal Azzuardi. Saya adalah seorang pengembang web pemula yang berdomisili di Jombang. Saya memiliki ketertarikan yang besar dalam dunia teknologi, khususnya dalam membangun antarmuka web yang
+          interaktif, ramah pengguna, dan dapat diakses oleh semua orang.
+        </p>
+        </div>
+        <div class="foto-profil">
+          <img src="img/fotonaufal.png" alt="Foto profil Mochammad Naufal Azzuardi tersenyum memakai kemeja rapi"/>
+        </div>
+      </section>
+
+      <section id="keahlian">
+        <h2>Keahlian</h2>
+        <ul>
+          <li>HTML5</li>
+          <li>Dasar-dasar CSS</li>
+          <li>Pembuatan Infografis dan Videografis</li>
+        </ul>
+      </section>
+
+      <section id="pendidikan">
+        <h2>Riwayat Pendidikan</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Tingkat</th>
+              <th>Nama Institusi</th>
+              <th>Tahun</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>SMA/Sederajat</td>
+              <td>SMK Telekomunikasi Darul 'Ulum Jombang</td>
+              <td>2022 - 2025</td>
+            </tr>
+            <tr>
+              <td>Perguruan Tinggi</td>
+              <td>Universitas Pesantren Tinggi Darul 'Ulum</td>
+              <td>2025 - Sekarang</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+
+      <section id="karyaku">
+        <h2>Karyaku</h2>
+        <p>Berikut adalah beberapa karya infografis dan videografis saya:</p>
+        
+        <div class="grup-karya"> 
+          <h3>Infografis</h3>
+          <div class="karya-infografis">
+            <div class="infografis">
+              <img src="img/Potret Kehutanan.png" alt="Infografis 1" />
+              <p>Potret Kehutanan Kabupaten Jombang</p>
+            </div>
+            
+            <div class="infografis">
+              <img src="img/Ketika Produk Pertanian Naik Level.png" alt="Infografis 2" />
+              <p>Ketika Produk Pertanian Naik Level</p>
+            </div>
+
+            <div class="infografis">
+              <img src="img/Setengah Ton Padi.png" alt="Infografis 3" />
+              <p>Setengah Ton Padi</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="grup-karya">
+          <h3>Videografis</h3>
+          <iframe class="videografis"
+            src="Video/Tahukah Kalian.mp4" 
+            title="Videografis Saya" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+
+      <section id="pesan-form">
+        <h2>Buku Tamu / Kirim Pesan</h2>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" class="form-control" required placeholder="Masukkan nama Anda">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" class="form-control" required placeholder="nama@email.com">
+          </div>
+          <div class="form-group">
+            <label for="kategori">Keperluan:</label>
+            <select id="kategori" name="kategori" class="form-control">
+              <option value="kolaborasi">Kolaborasi Proyek</option>
+              <option value="pertanyaan">Pertanyaan Umum</option>
+              <option value="lainnya">Lainnya</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="pesan">Pesan:</label>
+            <textarea id="pesan" name="pesan" rows="4" class="form-control" required placeholder="Tuliskan pesan..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Kirim</button>
+        </form>
+      </section>
+    </main>
+
+    <aside>
+      <h2>Fakta Menarik Tentang Saya</h2>
+      <ul>
+        <li>Selalu menikmati secangkir kopi susu sebelum mulai menulis kode.</li>
+        <li>
+          <strong>Lagu Favorit Saya:</strong><br>
+          <audio controls>
+            <source src="audio/audio.mp3" type="audio/mpeg">
+          </audio>
+        </li>
+      </ul>
+    </aside>
+
+    <footer id="kontak">
+      <h2>Hubungi Saya</h2>
+      <p>
+        Email: <a href="mailto:naufalazzuardi@gmail.com">naufalazzuardi@gmail.com</a> | GitHub:
+        <a href="https://github.com/MochammadNaufalAzzuardi" target="_blank" rel="noopener noreferrer">@naufalazzuardi</a>
+      </p>
+    </footer>
+  </body>
+</html>
