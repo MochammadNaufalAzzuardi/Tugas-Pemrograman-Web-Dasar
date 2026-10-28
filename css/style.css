@@ -236,3 +236,61 @@ footer a {
   color: #ffffff;
   text-decoration: underline;
 }
+
+.grid-lagu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.kartu-lagu {
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kartu-lagu:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.cover-container {
+  position: relative; /* Penting: menjadi acuan posisi elemen absolute di dalamnya */
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden; /* Memastikan elemen audio tidak melewati batas melengkung container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cover-container img {
+  width: 100%;
+  height: auto;
+  display: block; /* Menghilangkan celah kosong di bawah gambar bawaan browser */
+}
+
+.audio-player {
+  position: absolute;
+  bottom: 0; /* Menempelkan pemutar audio di sisi paling bawah cover */
+  left: 0;
+  width: 100%;
+  height: 45px; 
+  opacity: 0.95; /* Sedikit transparan agar terlihat menyatu */
+}
+
+/* Memperbaiki tampilan default tombol play di beberapa browser */
+.audio-player::-webkit-media-controls-enclosure {
+  border-radius: 0;
+  background-color: rgba(240, 240, 240, 0.9);
+}
+
+.kartu-lagu p {
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 15px;
+  color: #333333;
+}
