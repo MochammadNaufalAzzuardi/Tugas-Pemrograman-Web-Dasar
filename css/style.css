@@ -8,15 +8,40 @@ body {
   line-height: 1.7;
   color: #2b2b2b;
   background-color: #fcfcfc;
-  margin: 0;
+  
+  max-width: 1900px;
+  margin: 0 auto; 
   padding: 0;
+
+  display: grid; 
+  grid-template-columns: 2.5fr 1fr; 
+  grid-template-areas:
+    "header header"
+    "content sidebar"
+    "footer footer";
+  gap: 30px; 
 }
 
+header { 
+  grid-area: header;
+}
+
+.header-profil {
+  text-align: center;
+  padding: 20px 20px 0 20px;
+}
+
+.header-profil h1 {
+  margin: 0;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  color: #111111;
+  font-size: 42px;
+}
 
 nav.nav {
   background-color: #111111;
   padding: 15px 20px;
-  margin-bottom: 40px;
+  margin-bottom: 0; 
 }
 
 nav.nav ul {
@@ -38,10 +63,10 @@ nav.nav a {
   transition: color 0.2s ease;
 }
 
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+main { 
+  grid-area: content; 
+  padding: 0 20px; 
+  
 }
 
 main section {
@@ -212,16 +237,17 @@ table th {
   transition: background-color 0.2s ease;
 }
 
-aside {
-  max-width: 1200px;
-  margin: 0 auto 30px auto;
-  padding: 30px 40px;
+aside { 
+  grid-area: sidebar; 
   background-color: #f7f7f7;
   border-left: 3px solid #111111;
   border-radius: 0 4px 4px 0;
+  padding: 30px 40px;
+  margin-bottom: 20px;
 }
 
-footer {
+footer { 
+  grid-area: footer; 
   background-color: #111111;
   color: #dddddd;
   padding: 40px 20px;
@@ -259,29 +285,29 @@ footer a {
 }
 
 .cover-container {
-  position: relative; /* Penting: menjadi acuan posisi elemen absolute di dalamnya */
+  position: relative; 
   width: 100%;
   border-radius: 4px;
-  overflow: hidden; /* Memastikan elemen audio tidak melewati batas melengkung container */
+  overflow: hidden; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .cover-container img {
   width: 100%;
   height: auto;
-  display: block; /* Menghilangkan celah kosong di bawah gambar bawaan browser */
+  display: block; 
 }
 
 .audio-player {
   position: absolute;
-  bottom: 0; /* Menempelkan pemutar audio di sisi paling bawah cover */
+  bottom: 0; 
   left: 0;
   width: 100%;
   height: 45px; 
-  opacity: 0.95; /* Sedikit transparan agar terlihat menyatu */
+  opacity: 0.95; 
 }
 
-/* Memperbaiki tampilan default tombol play di beberapa browser */
+
 .audio-player::-webkit-media-controls-enclosure {
   border-radius: 0;
   background-color: rgba(240, 240, 240, 0.9);
